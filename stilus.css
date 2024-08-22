@@ -9,6 +9,7 @@ body {
 }
 
 header {
+    background-image: url("kepek/kezdohatter.jpg");
     height: 50vh;
     background-size: cover;
     margin: 0px;
@@ -18,21 +19,27 @@ header {
 
 .cimKezdolap {
     text-align: center;
-    color: #71a0d7;
-    text-shadow: 2px 2px #3d77a3;
+    color: #a7bef8;
+    text-shadow: 2px 2px #7a95c2;
     background-color: black;
-    padding: 3px;
+    padding: 1px 5px;
     font-size: 150%;
-    margin: 0px;
+    margin: 0;
+    display: flex;           
+    justify-content: center; 
+    align-items: center;     
 }
 
 .cimKezdolap h1 {
-    padding-left: 40px;
-    padding-bottom: 0px;
-    margin-bottom: 0px;
-    padding-top: 10px;
+    padding: 10px 0;
+    margin: 0;
 }
 
+.favicon {
+    margin-right: 10px; 
+    height: 48px;     
+    width: 48px; /
+}
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -47,7 +54,7 @@ nav ul {
 
 nav ul li {
     padding: 10px;
-    background-color: #5579d3;
+    background-color: #a7bef8;
     text-align: center;
     border-right: 2px solid black;
     transition: background-color 0.3s;
@@ -62,19 +69,43 @@ nav ul a {
 }
 
 nav ul a:hover {
-    color: orange;
+    color: rgb(219, 147, 61);
 }
+
+.articleDiv{
+    padding-right: 25px;
+    margin-left: 10px;
+    max-width: 800px;
+}
+
+.figyelemfelhivas h3{
+    font-size: x-large;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+
+.figyelemfelhivas {
+    border-bottom: 1px solid black;
+    padding-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+}
+ .figyelemfelhivas p{
+    font-style: normal;
+ }
+
+
 
 section {
     margin: 20px;
     padding: 20px;
-    border: 1px solid #3d77a3;
+    border: 1px solid #93ccf7;
     border-radius: 8px;
     background-color: #f5f5f5;
 }
 
 section h2 {
-    color: #5579d3;
+    color: #a7bef8;
     margin-bottom: 15px;
 }
 
@@ -117,11 +148,11 @@ button:hover {
 }
 
 footer {
-    background-color: #5579d3;
-    color: white;
+    background-color: #a7bef8;
+    color: black;
     padding: 20px 0;
     text-align: center;
-    border-top: 2px solid #5579d3;
+    border-top: 2px solid #a7bef8;
 }
 
 footer .elerhetoseg {
@@ -139,19 +170,20 @@ footer h3 {
 footer .kontakt {
     margin: 10px 0;
     font-size: 1.2em;
-    color: white;
+    color: black;
 }
 
 footer .kontakt strong {
-    color: orange; 
+    color: rgb(219, 147, 61); 
 }
 
 footer .kontakt a {
-    color: white;
+    color: black;
     text-decoration: none;
     transition: color 0.3s;
 }
 
 footer .kontakt a:hover {
-    color: orange; 
+    color: rgb(219, 147, 61); 
 }
+
