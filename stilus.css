@@ -1,3 +1,4 @@
+/*KEZDŐLAP (index.html)*/
 *{
     margin: 0;
     padding: 0px;
@@ -85,10 +86,11 @@ nav ul a:hover {
 }
 
 .figyelemfelhivas {
-    border-bottom: 1px solid black;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    padding-top: 30px;
+    border: 2px solid black; 
+    padding: 10px;           
+    margin: 20px;            
+    border-radius: 5px;     
+    background-color: #f9f9f9; 
 }
  .figyelemfelhivas p{
     font-style: normal;
@@ -187,3 +189,22 @@ footer .kontakt a:hover {
     color: rgb(219, 147, 61); 
 }
 
+/*SZOLGÁLTATÁSOK (szolgaltatasok.html)*/
+
+.szolgaltatasCim h3{
+    font-size: xx-large;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+
+.szolgaltatasSzoveg p{
+    font-style: normal;
+}
+
+.szolgaltatasSzoveg {
+    border: 2px solid black; 
+    padding: 10px;           
+    margin: 20px;            
+    border-radius: 5px;     
+    background-color: #f9f9f9; 
+}
