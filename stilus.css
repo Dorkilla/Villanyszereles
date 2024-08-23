@@ -1,4 +1,5 @@
-*{
+/*KEZDŐLAP (index.html)*/
+* {
     margin: 0;
     padding: 0px;
     box-sizing: border-box;
@@ -6,6 +7,11 @@
 
 body {
     background-size: cover;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    padding: 5px;
+    background-color: black;
 }
 
 header {
@@ -15,19 +21,49 @@ header {
     margin: 0px;
     padding: 0%;
 }
+/*grid-areak: */
+main {
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    grid-template-areas:
+        "h h h"
+        "n n n"
+        "a a j"
+        "f f f";
+}
+
+header {
+    grid-area: h;
+}
+
+article {
+    grid-area: a;
+}
+
+nav {
+    grid-area: n;
+}
+
+footer {
+    grid-area: f;
+}
+
+aside {
+    grid-area: j;
+}
+
 
 
 .cimKezdolap {
     text-align: center;
-    color: #a7bef8;
-    text-shadow: 2px 2px #7a95c2;
-    background-color: black;
+    background-color: #a7bef8;
+    color: black;
     padding: 1px 5px;
     font-size: 150%;
     margin: 0;
-    display: flex;           
-    justify-content: center; 
-    align-items: center;     
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cimKezdolap h1 {
@@ -36,10 +72,11 @@ header {
 }
 
 .favicon {
-    margin-right: 10px; 
-    height: 48px;     
-    width: 48px; /
+    margin-right: 10px;
+    height: 48px;
+    width: 48px;/
 }
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -72,27 +109,33 @@ nav ul a:hover {
     color: rgb(219, 147, 61);
 }
 
-.articleDiv{
+.articleDiv {
     padding-right: 25px;
     margin-left: 10px;
     max-width: 800px;
+    
+}
+main{
+    background-color: #f9f9f9;
 }
 
-.figyelemfelhivas h3{
-    font-size: x-large;
+.figyelemfelhivas h3 {
+    font-size: xx-large;
     font-style: normal;
     padding-bottom: 10px;
 }
 
 .figyelemfelhivas {
-    border-bottom: 1px solid black;
-    padding-left: 10px;
-    padding-bottom: 20px;
-    padding-top: 30px;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
 }
- .figyelemfelhivas p{
+
+.figyelemfelhivas p {
     font-style: normal;
- }
+}
 
 
 
@@ -174,7 +217,7 @@ footer .kontakt {
 }
 
 footer .kontakt strong {
-    color: rgb(219, 147, 61); 
+    color: rgb(219, 147, 61);
 }
 
 footer .kontakt a {
@@ -184,7 +227,85 @@ footer .kontakt a {
 }
 
 footer .kontakt a:hover {
-    color: rgb(219, 147, 61); 
+    color: rgb(219, 147, 61);
+}
+
+/*SZOLGÁLTATÁSOK (szolgaltatasok.html)*/
+
+.szolgaltatasCim h3 {
+    font-size: xx-large;
+    font-style: normal;
+    padding-bottom: 10px;
+}
+
+.szolgaltatasSzoveg p {
+    font-style: normal;
+}
+
+.szolgaltatasSzoveg {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+
+.szolgaltatasSzoveg {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.articleSzolgaltatasDiv {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.szolgaltatasokFelsorolas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 10px;
+    justify-items: center;
+}
+
+.felujitas,
+.kialakitas,
+.telepites,
+.javitas,
+.automatizalas {
+    transition: transform 0.3s ease;
+}
+
+.felujitas:hover,
+.kialakitas:hover,
+.telepites:hover,
+.javitas:hover,
+.automatizalas:hover {
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+/* Páratlan számúság miatt */
+.szolgaltatasokFelsorolas>div:last-child {
+    grid-column: span 2;
+}
+
+.szolgaltatasokFelsorolas>div {
+    background-color: #f9f9f9;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 .csik {
     height: 1.5px; 
