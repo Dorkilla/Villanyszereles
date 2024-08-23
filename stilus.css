@@ -7,8 +7,8 @@
 
 body {
     background-size: cover;
-    width: 90%;
-    max-width: 900px;
+    width: 100%;
+    /*max-width: 900px;*/
     margin: auto;
     padding: 5px;
     background-color: black;
@@ -53,10 +53,9 @@ aside {
 }
 
 
-
 .cimKezdolap {
     text-align: center;
-    background-color: #a7bef8;
+    background-color:  #a7bef8;
     color: black;
     padding: 1px 5px;
     font-size: 150%;
@@ -90,11 +89,12 @@ nav ul {
 }
 
 nav ul li {
-    padding: 10px;
+    padding: 13px;
     background-color: #a7bef8;
     text-align: center;
-    border-right: 2px solid black;
+    /*border-right: 2px solid black;*/
     transition: background-color 0.3s;
+    font-size: 16px;
 }
 
 nav ul a {
@@ -107,6 +107,7 @@ nav ul a {
 
 nav ul a:hover {
     color: rgb(219, 147, 61);
+    font-size: 17px;
 }
 
 .articleDiv {
@@ -137,18 +138,18 @@ main{
     font-style: normal;
 }
 
-
+/*kapcsolat (kapcsolat.html)*/
 
 section {
-    margin: 20px;
-    padding: 20px;
+    margin: 80px;
+    padding: 80px;
     border: 1px solid #93ccf7;
     border-radius: 8px;
     background-color: #f5f5f5;
 }
 
 section h2 {
-    color: #a7bef8;
+    color: #0099ff;
     margin-bottom: 15px;
 }
 
@@ -189,6 +190,8 @@ button {
 button:hover {
     background-color: #3d77a3;
 }
+
+/*Footer beállítások*/
 
 footer {
     background-color: #a7bef8;
@@ -248,6 +251,7 @@ footer .kontakt a:hover {
     margin: 20px;
     border-radius: 5px;
     background-color: #f9f9f9;
+    font-size: large;
 }
 
 
@@ -284,6 +288,7 @@ footer .kontakt a:hover {
 .javitas,
 .automatizalas {
     transition: transform 0.3s ease;
+    font-size: medium
 }
 
 .felujitas:hover,
@@ -319,4 +324,26 @@ footer .kontakt a:hover {
 
 }
 
+/* REFERENCIÁK (referenciak.html) */
 
+.ReferenciakCim h3 {
+    font-size: xx-large;
+    font-style: normal;
+    padding-bottom: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.ReferenciaSzoveg {
+    
+    padding: 1px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    font-size: large;
+}
+
+.ReferenciaSzoveg p {
+    font-style: normal;
+    text-align: center;
+}
