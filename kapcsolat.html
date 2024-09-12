@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Czékus&B villszer</title>
     <link rel="icon" type="image/x-icon" href="/kepek/favicon.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+        integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+    <script type="module" src="main.js"></script>
     <link rel="stylesheet" href="stilus.css">
 </head>
 
@@ -34,45 +39,45 @@
                 <form action="submit_quote_request.php" method="POST">
                     <label for="name">Név:</label>
                     <input type="text" id="name" name="name" required><br>
-    
+
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required><br>
-    
+
                     <label for="phone">Telefonszám:</label>
                     <input type="tel" id="phone" name="phone" required><br>
-    
+
                     <label for="service">Szolgáltatás típusa:</label>
                     <select id="service" name="service">
                         <option value="lakossagi">Lakossági</option>
                         <option value="ipari">Ipari</option>
                         <option value="egyeb">Egyéb</option>
                     </select><br>
-    
+
                     <label for="description">Részletes leírás:</label>
                     <textarea id="description" name="description" rows="4" required></textarea><br>
                     <div class="g-recaptcha" data-sitekey="YOUR_SITE_KEY"></div>
                     <button type="submit">Árajánlat kérése</button>
                 </form>
             </section>
-    
+
             <section>
                 <h2>Munkalehetőségre jelentkezés</h2>
                 <form action="submit_job_application.php" method="POST">
                     <label for="applicant-name">Név:</label>
                     <input type="text" id="applicant-name" name="applicant-name" required><br>
-    
+
                     <label for="applicant-email">Email:</label>
                     <input type="email" id="applicant-email" name="applicant-email" required><br>
-    
+
                     <label for="phone-number">Telefonszám:</label>
                     <input type="tel" id="phone-number" name="phone-number" required><br>
-    
+
                     <label for="experience">Tapasztalat:</label>
                     <textarea id="experience" name="experience" rows="4" required></textarea><br>
-    
+
                     <label for="cv">Önéletrajz feltöltése:</label>
                     <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required><br>
-    
+
                     <button type="submit">Jelentkezés</button>
                 </form>
             </section>
@@ -96,4 +101,5 @@
         </footer>
     </main>
 </body>
+
 </html>
